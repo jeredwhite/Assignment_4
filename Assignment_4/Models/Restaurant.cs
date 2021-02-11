@@ -20,18 +20,27 @@ namespace Assignment_4.Models
 #nullable enable
         public int? Rank { get; set; } = 404;
 #nullable disable
+
         [Required]
         public string Name { get; set; }
+
+        [Display(Name = "Restaurant Name")]
         [Required]
         public string RestaurantName { get; set; }
+
 #nullable enable
+        [Display(Name ="Favorite Dish")]
         public string? FavoriteDish { get; set; } = "It's all tasty!";
 #nullable disable
+
         [Required]
         public string Address { get; set; }
+
         [Required]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Entered phone format is not valid.")]
         [Phone]
         public string Phone { get; set; }
+
         public string Website { get; set; } = "Coming Soon.";
 
 

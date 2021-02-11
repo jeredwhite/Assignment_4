@@ -40,7 +40,7 @@ namespace Assignment_4.Controllers
                 return View("Confirmation", onSubmit);
             }
 
-            return View(onSubmit);
+            return View();
         }
 
         public IActionResult SuggestionList()
