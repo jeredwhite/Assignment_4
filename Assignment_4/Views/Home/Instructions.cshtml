@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Instructions";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    An anonymous client has recently been hired by BYU and is new to the Provo area. He is also a
+    foodie. He is looking for a web app that will list out the Top 5 restaurants in the Provo area. As
+    he is new to the area, he needs the list to be pre-populated with your Top 5 favorite restaurants he
+    ought to try. The following information should be listed:
+
+    <ul>
+        <li>Rank</li>
+        <li>Restaurant Name</li>
+        <li>Favorite Dish</li>
+        <li>Address</li>
+        <li>Restaurant Phone #</li>
+        <li>Link to Website</li>
+    </ul>
+    Rank, Restaurant Name, and Address all need to be included. The other fields are optional. If
+    the favorite dish is empty as you prepare to list out the results, list “It’s all tasty!” in its place. If
+    there is no website entered in the model, we should store as a default “Coming soon.” Once set,
+    the rank should not be modified (i.e. it should be read only.)
+    He also wants a page that allows users to submit their own suggestions and to be able to view the
+    list of suggestions. On this page, we only need to store the:
+    <br />
+    <ul>
+        <li>Name</li>
+        <li>Restaurant Name</li>
+        <li>Favorite Dish</li>
+        <li>Restaurant Phone #</li>
+        <li>Check to make sure the phone number is in a valid format (#notcoveredinthevideos).</li>
+    </ul>
+
+    Make sure to include in your web app:
+
+    <ul>
+        <li>Bootstrap Styling</li>
+        <li>Navigation between each of the pages</li>
+        <li>A welcome page that lists out the Top 5 Restaurants</li>
+        <li>An array to store and print out those Top 5 Restaurants</li>
+        <li>A page that allows the user to submit their own suggestions</li>
+        <li>A page that lists out the suggestions that have been entered by the users</li>
+        <li>A List to store and print out those suggestions</li>
+        <li>Protection against nulls in the optional fields breaking your program</li>
+    </ul>
+</p>

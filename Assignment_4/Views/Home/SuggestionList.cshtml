@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Suggestions";
+}
+
+@model IEnumerable<Assignment_4.Models.Restaurant>
+
+
+<h1><em>Suggestion List</em></h1>
+
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FavoriteDish)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Assignment_4.Models.Restaurant x in Model)
+            {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => x.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => x.FavoriteDish)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => x.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => x.Phone)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
